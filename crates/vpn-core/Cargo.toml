@@ -1,0 +1,14 @@
+[package]
+name = "vpn-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+bytes = { workspace = true }
+rand = { workspace = true }
+hkdf = { workspace = true }
+sha2 = { workspace = true }
+xsalsa20poly1305 = { workspace = true }
+zeroize = { workspace = true }
+thiserror = { workspace = true }

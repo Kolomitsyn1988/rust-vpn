@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = ["crates/vpn-core", "crates/vpn-server", "crates/vpn-client"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "io-util", "time", "sync"] }
+bytes = "1"
+rand = "0.8"
+hkdf = "0.12"
+sha2 = "0.10"
+xsalsa20poly1305 = "0.9"
+zeroize = "1"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

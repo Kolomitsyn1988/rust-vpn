@@ -1,0 +1,11 @@
+[package]
+name = "vpn-client"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+vpn-core = { path = "../vpn-core" }
+tokio = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
